@@ -1,0 +1,164 @@
+body{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    margin: 0px;
+    overflow: hidden;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 65%;
+    height: 100%;
+}
+#ed{
+width: 140px;
+}
+
+.bl{
+    position: relative;
+    display: flex;
+    left: -40%;
+    font-size: xx-large;
+    transform: translateY(-65%);
+}
+
+#dwn{
+    transform: translate(65%, 930%);
+}
+
+.cw{
+    color: white;
+}
+.sv{
+    color: silver;
+}
+
+#middle{
+    display: flex;
+    gap: 10px;
+}
+
+#folk{
+    transform: translateY(60%);
+    font-size: xx-large;
+}
+#fst{
+transform: translate(15%, 160%);
+margin: 0px;
+margin-left: 0px;
+width: 100%;
+display: flex;
+font-size: xx-large;
+}
+
+.him1{
+display: flex;
+flex-direction: column;
+margin: 0px;
+margin-right: 10px;
+height: 50px;
+overflow: hidden;
+justify-content: right;
+
+
+}
+.him2{
+display: flex;
+flex-direction: column;
+margin: 0px;
+margin-right: 10px;
+height: 50px;
+overflow: hidden;
+
+}
+
+
+.evo{
+animation: grill 5s linear infinite;
+margin: 0px;
+}
+
+@keyframes grill {
+0%{
+transform: translateY(0%);
+}
+50%{
+transform: translateY(0%);
+}
+62.5%{
+transform: translateY(-100%);
+}
+87.5%{
+transform: translateY(-100%);
+}
+100%{
+transform: translateY(0%);
+}
+}
+
+.eve{
+animation: fli 5s linear infinite;
+margin: 0px;
+}
+
+@keyframes fli {
+0%{
+transform: translateY(0%);
+}
+25%{
+transform: translateY(0%);
+}
+37.5%{
+transform: translateY(-100%);
+}
+87.5%{
+transform: translateY(-100%);
+}
+
+100%{
+transform: translateY(0%);
+}
+}
+
+.ct{
+display: flex;
+transform: translate(-225%,700%);
+gap: 10px;
+}
+
+aside{
+background-image: url('pictures/Vector.svg');
+width: 35%;
+height: 100vh;
+background-size: 100%;
+background-repeat: no-repeat;
+}
+
+nav{
+background-color: black;
+transform: translate(-30% ,40%);
+padding: 10px;
+display: flex;
+justify-content: space-around;
+border-radius: 10px;
+width: 40vw;
+
+}
+
+a{
+text-decoration: none;
+color: rgb(255, 0, 128);
+font-size: 25px;
+}
+
+
+
+#hq{
+width: 30px;
+margin: 1px;
+}
