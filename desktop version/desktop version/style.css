@@ -1,0 +1,19 @@
+/* Try separating you CSS into sections so it can be easier when collaboration with someone */
+
+/* RESET */
+    *,
+    *::before,
+    *::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/*  */
+
+/* >>>>> HEADER STYLES <<<<< */
+    .header{
+
+
+        display: flex;
+        justify-content: space-evenly;
+    }
