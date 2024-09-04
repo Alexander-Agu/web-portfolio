@@ -10,10 +10,212 @@
     }
 /*  */
 
+/* VARIABLES */
+    :root{
+
+    }
+/*  */
+
+/* >>>>> GENERAL STYLES <<<<< */
+    html{
+        scroll-behavior: smooth;
+    }
+
+    body{
+        background-color: black;
+        color: white;
+    }
+/*  */
+
 /* >>>>> HEADER STYLES <<<<< */
     .header{
-
+        height: 5rem;
 
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
     }
+
+    .logo-name{
+        font-size: 30px;
+        color: white;
+    }
+
+    .nav-list{
+        height: 100%;
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .nav-item{
+        list-style: none;
+    }
+
+    .nav-link{
+        color: rgb(255, 0, 128);
+        font-size: 25px;
+        text-decoration: none;
+        font-weight: bolder
+    }
+    /* Hides the close and menu button */
+    .open-sidebar,
+    .close-sidebar,
+    #sidebar-active{
+        display: none;
+    }
+    
+/* Responsive for Mobile */
+    @media(max-width: 800px){
+        .nav-list{
+            transition: ease-in-out 1s;
+
+            width: 350px;
+            padding: 20px;
+
+            position: fixed;
+            top: 0;
+            right: -100%;
+            z-index: 10;
+
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+        }
+
+        .open-sidebar,
+        .close-sidebar{
+            display: block;
+        }
+
+        ul span{
+            color: black;
+        }
+
+        #sidebar-active:checked ~ .nav-list{
+            right: 0;
+            transition: ease-out 1s;
+            background-color: white;
+        }
+
+        #sidebar-active:checked ~ .overlay{
+            height: 100%;
+            width: 100%;
+            transition: ease-out 1s;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9;
+        }
+    }
+
+    @media(max-width: 450px){
+        .nav-link{
+            width: 100%;
+        }
+    }
+/*  */
+
+/* >>>>> HERO STYLES <<<<< */
+.cw {
+    color: white;
+}
+
+.sv {
+    color: silver;
+}
+
+#folk {
+    transform: translateY(60%);
+    font-size: xx-large;
+}
+
+#fst {
+    transform: translate(15%, 160%);
+    margin: 0px;
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    font-size: xx-large;
+}
+
+.him1 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-right: 10px;
+    height: 50px;
+    overflow: hidden;
+    justify-content: right;
+
+
+}
+
+.him2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    margin-right: 10px;
+    height: 50px;
+    overflow: hidden;
+
+}
+
+
+.evo {
+    animation: grill 5s linear infinite;
+    margin: 0px;
+}
+
+@keyframes grill {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    62.5% {
+        transform: translateY(-100%);
+    }
+
+    87.5% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.eve {
+    animation: fli 5s linear infinite;
+    margin: 0px;
+}
+
+@keyframes fli {
+    0% {
+        transform: translateY(0%);
+    }
+
+    25% {
+        transform: translateY(0%);
+    }
+
+    37.5% {
+        transform: translateY(-100%);
+    }
+
+    87.5% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}

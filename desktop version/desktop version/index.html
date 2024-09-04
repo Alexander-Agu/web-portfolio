@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet"href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     </head>
     <body>
         
@@ -11,18 +12,34 @@
 
         <!-- HEADER => is where you put you navigation links, like menu, sidebar and all those things -->
         <header class="header">
-            <h2 class="logo-name">Henfrick.dev</h2>
+            <h2 class="logo-name">Hendrick.dev</h2>
 
             <!-- Navigation center -->
             <nav class="navbar">
+                <!-- Open Menu -->
+                <input type="checkbox" id="sidebar-active">
+                    <label for="sidebar-active" class="open-sidebar">
+                        <span class="material-symbols-outlined">
+                            menu
+                        </span>
+                    </label>
+
+                    <label for="sidebar-active" class="overlay"></label>
+
                 <ul class="nav-list">
+                    <!-- Close Menu -->
+                    <label for="sidebar-active" class="close-sidebar">
+                        <span class="material-symbols-outlined">
+                            close
+                        </span>
+                    </label>
                     <li class="nav-item">
                         <a href="" class="nav-link">Home</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="service.html" class="nav-link">Services</a>
                     </li>
-                    <li>
+                    <li class="nav-item">
                         <a href="testimonials.html" class="nav-link">Testimonials</a>
                     </li>
                 </ul>
@@ -32,28 +49,27 @@
         <!-- MAIN => is where you put all the content for your webpage -->
         <main>
             <section class="hero">
-
+                <div id="folk">
+                    <h2 class="cw" align="center">
+                        Hi, my name is Hendrick.<br>I'm a
+                    </h2>
+                </div>
+                
+                <div id="fst">
+                    <div class=" him1 sv" align="right">
+                        <h2 class="evo">WEB</h2>
+                        <h2 class="evo">GRAPHIC</h2>
+                    </div>
+                    <div class=" him2 sv">
+                        <h2 class="eve">DEVELOPER</h2>
+                        <h2 class="eve">DESIGNER</h2>
+                    </div>
+                </div>
             </section>
         </main>
 
         <section>
-             <h1 class="cw bl">Hendrick</h1>
-            <div id="folk">
-                <h2 class="cw" align="center">
-                    Hi, my name is Hendrick.<br>I'm a
-                </h2>
-            </div>
 
-            <div id="fst">
-                <div class=" him1 sv" align="right">
-                    <h2 class="evo">WEB</h2>
-                    <h2 class="evo">GRAPHIC</h2>
-                </div>
-                <div class=" him2 sv" >
-                    <h2 class="eve">DEVELOPER</h2>
-                    <h2 class="eve">DESIGNER</h2>
-                </div>
-            </div>
 
             <div class="ct">
             <a href=""><img src='icons/whatsapp-icon.svg' id="hq"></a>
